@@ -59,12 +59,8 @@
       var coeficiente = parseFloat(document.getElementById('coeficiente').value);
       var total = parseFloat(document.getElementById('total').value);
       var resultado = ((comprimento + altura) * espessura * junta * coeficiente) / (comprimento * altura) * total / 10;
-      //document.getElementById('resultado').innerHTML = "Resultado: " + resultado.toFixed(3) + "kg";
-      if(!total) {
-        alert("Preencha os campos");
-      } else{
-        alert("Consumo total de: " + resultado.toFixed(3) + "kg");
-      }
+      document.getElementById('resultado').innerHTML = "Resultado: " + resultado.toFixed(3) + "kg";
+      
    </script>  
   
 </body>
